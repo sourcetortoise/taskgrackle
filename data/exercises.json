@@ -1,0 +1,22 @@
+{
+  "A": { "name": "Archway press",   "type": "i", "method": "Use a big archway to do wide stretches."},
+  "a": { "name": "The Anvil",       "type": "m", "method": "Use the ottoman to stretch the upper back."},
+  "b": { "name": "Elastic bands",   "type": "z", "method": "Stretch out the shoulders, arms, and back & maybe do the Jetpack."},
+  "c": { "name": "Counter steps",   "type": "i", "method": "Stretch out the hips, psoas & glutes by stepping onto a counter."},
+  "d": { "name": "Doorframe yoga",  "type": "i", "method": "Use a doorframe to stretch the arms & chest."},
+  "e": { "name": "Elevations",      "type": "m", "method": "Hold yourself between the counters for as long as you can."},
+  "f": { "name": "Fireplace yoga",  "type": "m", "method": "Use the facets of the fireplace to stretch the back & shoulders."},
+  "h": { "name": "Hand grippers",   "type": "z", "method": "Strong hands make guitar and climbing easier."},
+  "j": { "name": "Jewel stretch",   "type": "m", "method": "Try vertical, horizontal & unassisted to target the mid back."},
+  "o": { "name": "Orb harnessing",  "type": "m", "method": "Leverage the power of Orb Theory to master the physical body."},
+  "p": { "name": "Planks",          "type": "m", "method": "Use the foam roller, an ottoman, armchair, or the floor."},
+  "P": { "name": "Push-ups",        "type": "m", "method": "Use good technique and do as many as you can."},
+  "r": { "name": "Foam roller",     "type": "m", "method": "Relax on the roller & do some stretches."},
+  "S": { "name": "Side bends",      "type": "m", "method": "Take the time to do them slowly and hold for a bit."},
+  "s": { "name": "Squats",          "type": "m", "method": "Use good technique. Do 3 sets of 10."},
+  "v": { "name": "Vertical stretch","type": "i", "method": "Do sitting or standing."},
+  "W": { "name": "Big weights",     "type": "z", "method": "Take care to use good technique. Do 3 sets."},
+  "w": { "name": "Small weights",   "type": "z", "method": "Do as many reps of various types of lift as you can."},
+  "x": { "name": "Reflexology mat", "type": "m", "method": "Relax with the foot mat & do ankle-strengthening too."},
+  "z": { "name": "Edge twists",     "type": "i", "method": "Use the edge of the shower for shoulder & side stretches."}
+}

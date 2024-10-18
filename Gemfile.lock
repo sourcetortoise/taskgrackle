@@ -1,0 +1,23 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    bigdecimal (3.1.8)
+    colorize (1.1.0)
+    csv (3.3.0)
+    httparty (0.22.0)
+      csv
+      mini_mime (>= 1.0.0)
+      multi_xml (>= 0.5.2)
+    mini_mime (1.1.5)
+    multi_xml (0.7.1)
+      bigdecimal (~> 3.1)
+
+PLATFORMS
+  arm64-darwin-22
+
+DEPENDENCIES
+  colorize
+  httparty
+
+BUNDLED WITH
+   2.4.20

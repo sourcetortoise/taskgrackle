@@ -1,0 +1,10 @@
+.DS_Store
+data/checkins.csv
+data/comms.csv
+data/engagements.csv
+data/mood.csv
+data/settings.json
+data/last.txt
+data/squawkblocker.txt
+data/gracklecoin.json
+sound/*

@@ -1,0 +1,6 @@
+{
+  "f": { "name": "Facebook", "frequency": 168},
+  "l": { "name": "LinkedIn", "frequency": 168},
+  "t": { "name": "Twitter",  "frequency": 168},
+  "d": { "name": "Discord",  "frequency": 168}
+}

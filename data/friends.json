@@ -1,0 +1,7 @@
+{
+  "m": {  "name": "Family member",   "methods": ["text", "phone"], "family": true},
+  "n": {  "name": "Family member 2", "methods": ["text", "phone"], "family": true},
+  "f": {  "name": "Friend",   "methods": ["text"]},
+  "g": {  "name": "Friend 2", "methods": ["text"]},
+  "h": {  "name": "Friend 3", "methods": ["text"]}
+}
