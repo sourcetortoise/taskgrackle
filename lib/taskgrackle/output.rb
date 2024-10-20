@@ -602,7 +602,11 @@ class Output
       checkin_keys = checkin_array[1].chars
       checkin_task_names = []
       checkin_keys.each do |checkin_key|
-        checkin_task_names << tasks[checkin_key]['name']
+        if tasks[checkin_key]
+          checkin_task_names << tasks[checkin_key]['name']
+        else
+          checkin_task_names << '[removed]'
+        end
       end
 
       puts "#{checkin_array[0].strftime('%a %b %d %I:%M %p').colorize(time_color(checkin_array[0]))} #{checkin_task_names.join(", ")}"
