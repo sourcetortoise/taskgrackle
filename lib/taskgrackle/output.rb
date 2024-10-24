@@ -321,13 +321,13 @@ class Output
   def self.initial_greeting
     puts "Welcome to TaskGrackle! #{graaak!}\n".colorize(MORNING_COLOR)
     puts "Keep your life on track by following a grackle's suggestions.\n".colorize(EXERCISE_COLOR)
-    puts "Press 1 or Space Bar to check in the tasks you've done today.\n".colorize(SPRING_COLOR)
+    puts "Press 1 or Space Bar to log the tasks you've done today.\n".colorize(SPRING_COLOR)
   end
 
   def self.secondary_greeting
-    puts "Keep checking in during the day as you complete tasks.\n"
-    puts "Earn Gracklecoin for work completed!.\n\n".colorize(MORNING_COLOR)
-    puts "Periodically check in with your mood to make sure everything is okay.\n".colorize(MOOD_COLOR)
+    puts "Check in periodically during the day as you complete tasks.\n\n"
+    puts "Earn Gracklecoin for work completed. #{graaak!}\n".colorize(MORNING_COLOR)
+    puts "How is your mood? Press 2 or 'm' to do a check-up.\n".colorize(MOOD_COLOR)
   end
 
   def self.third_greeting
@@ -335,6 +335,7 @@ class Output
     puts "Edit the included " + ".json".colorize(SPRING_COLOR) + " files and " + "output.rb".colorize(SPRING_COLOR) + " to make TaskGrackle your own!\n"
     puts "Restart the program after making any edits.\n\n"
     puts "Press q to quit.\n".colorize(MOOD_COLOR)
+    puts "Keep exploring and have fun! #{graaak!}\n".colorize(MORNING_COLOR)
   end
 
   def self.morning_first_greeting(tasks)
@@ -559,7 +560,7 @@ class Output
     work_location = ['Standing desk', 'Armchair', 'The counter', 'The table', 'The sofa'].sample
 
     puts "Prepare for Work Hour:\n".colorize(:light_green)
-    puts "- Put on headphones".colorize(:light_green)
+    puts "- Put on headphones"
     puts "- Phone to charging station"
     puts "- Water in thermos"
     puts "- Set up location: #{work_location}"
@@ -644,6 +645,8 @@ class Output
   def self.grocery_prep_screen(essentials)
     grackle_header
     grocery_col_length = 25
+
+    puts "Running low on any essentials?\n".colorize(:light_green)
 
     # split into 3 columns
     cols = [[],[],[]]
