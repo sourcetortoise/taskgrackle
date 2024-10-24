@@ -4,7 +4,7 @@ data/comms.csv
 data/engagements.csv
 data/mood.csv
 data/settings.json
-data/last.txt
-data/squawkblocker.txt
+data/last_checkin.time
+data/squawk.blocker
 data/gracklecoin.json
 sound/*

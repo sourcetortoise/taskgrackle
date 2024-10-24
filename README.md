@@ -2,7 +2,7 @@
 
 ![TaskGrackle in operation](https://github.com/mirthturtle/taskgrackle/blob/main/img/taskgrackle-daytime.jpg "TaskGrackle in operation")
 
-Get your life on track with TaskGrackle, a hackable, self-hosted life management system. Designed for use on a dedicated Raspberry Pi terminal in your living/working space, but can also be run in a macOS terminal or Windows command prompt.
+Get your life on track with TaskGrackle, a self-hosted and hackable life management system. Run it on macOS, Windows, or a dedicated [Raspberry Pi](https://www.raspberrypi.com/) terminal in your living/working space.
 
 ## Features
 
@@ -22,21 +22,6 @@ Get your life on track with TaskGrackle, a hackable, self-hosted life management
 
 ## Running
 
-### Raspberry Pi
-
-Clone the repo into your home directory: `git clone https://github.com/mirthturtle/taskgrackle.git`
-
-Then [install Ruby](https://www.ruby-lang.org/en/documentation/installation/)
-
-Install dependencies: `gem install colorize httparty`
-
-Add to ~/.bashrc:
-```
-alias grackle='cd /home/pi/taskgrackle && ruby -Ilib bin/taskgrackle'
-alias g='grackle'
-```
-Reload bashrc: `. ~/.bashrc` and launch TaskGrackle with `grackle` or `g`.
-
 ### macOS
 
 Download the repo to your Desktop.
@@ -45,12 +30,12 @@ Open Terminal and navigate to the folder with `cd ~/Desktop/taskgrackle`
 
 Ruby should already be installed on macOS. Install dependencies: `gem install colorize httparty`
 
-Add to ~/.zshrc: run `nano ~/.zshrc`. Scroll to the bottom of the file and paste:
+Add a shortcut command: run `nano ~/.zshrc`. In the editor, scroll to the bottom of the file and paste:
 ```
 alias grackle='cd ~/Desktop/taskgrackle && ruby -Ilib bin/taskgrackle'
 alias g='grackle'
 ```
-Save and close the editor by pressing `ctrl-x`, `y`, then `ENTER`.
+Save and close the file by pressing `ctrl-x`, `y`, then `ENTER`.
 
 Open a new Terminal window and launch TaskGrackle with `grackle` or `g`.
 
@@ -67,9 +52,28 @@ Run with: `ruby -Ilib bin/taskgrackle`
 ![TaskGrackle Nights](https://github.com/mirthturtle/taskgrackle/blob/main/img/taskgrackle-nights.jpg "TaskGrackle Nights")
 
 
-### Grackle noises on Raspberry Pi
+### Raspberry Pi
 
-Some users might appreciate a grackle noise from the machine as a reminder if it's been too long since a check-in. To use this feature, obtain [grackle sounds](https://www.audubon.org/field-guide/bird/common-grackle) and place in the `sound` directory.
+Clone the repo into your home directory: `git clone https://github.com/mirthturtle/taskgrackle.git`
+
+Then [install Ruby](https://www.ruby-lang.org/en/documentation/installation/).
+
+Install dependencies: `gem install colorize httparty`
+
+Add to ~/.bashrc:
+```
+alias grackle='cd /home/pi/taskgrackle && ruby -Ilib bin/taskgrackle'
+alias g='grackle'
+```
+Reload bashrc: `. ~/.bashrc` and launch TaskGrackle with `grackle` or `g`.
+
+#### Grackle noises on Raspberry Pi
+
+Some users might appreciate a *graaak* from the bird if it's been too long since a check-in. To use this feature:
+
+Set the number of hours after which your grackle becomes vocal in `data/hours_til.grackle`.
+
+Obtain [grackle sounds](https://www.audubon.org/field-guide/bird/common-grackle) and place in the `sound` directory.
 
 Install VLC & dependencies: `sudo apt-get install vlc pulseaudio alsa-base`
 
@@ -79,7 +83,6 @@ Add a cronjob `crontab -e`:
 ## every hour from 9am to 5pm
 0 9-17 *   *   *   XDG_RUNTIME_DIR=/run/user/$(id -u) /home/pi/taskgrackle/vocalization.sh
 ```
-Set the number of hours after which your grackle becomes vocal in `data/hours_til.grackle`.
 
 To connect a USB speaker: locate device in `aplay -l`. Specify card number of device in `/usr/share/alsa/alsa.conf`:
 ```

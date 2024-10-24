@@ -7,10 +7,10 @@
 #  - it's been more than X hours since last interaction
 #    - set X in `data/hours_til.grackle`
 
-if [ ! -f "data/squawkblocker.txt" ]; then
-  if [ -f "data/last.txt" ]; then
+if [ ! -f "data/squawk.blocker" ]; then
+  if [ -f "data/last_checkin.time" ]; then
 
-    LAST="$(cat data/last.txt)"
+    LAST="$(cat data/last_checkin.time)"
     NOW="$( date +%s )"
     HOURS_TIL_VOCAL="$(cat data/hours_til.grackle)"
 

@@ -151,21 +151,21 @@ class Helper
   end
 
   def self.update_last_interacted
-    File.open("./data/last.txt", "w") do |f|
+    File.open("./data/last_checkin.time", "w") do |f|
       f.write(Time.now.to_i)
       f.close
     end
   end
 
   def self.place_squawkblocker
-    File.open("./data/squawkblocker.txt", "w") do |f|
+    File.open("./data/squawk.blocker", "w") do |f|
       f.write('Graaak! Sounds blocked.')
       f.close
     end
   end
 
   def self.remove_squawkblocker
-    File.delete("./data/squawkblocker.txt")
+    File.delete("./data/squawk.blocker")
     update_last_interacted
   end
 
