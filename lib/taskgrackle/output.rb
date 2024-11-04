@@ -694,7 +694,7 @@ class Output
     habits.each do |key, habit|
       # determine if habit is toggled or not
       habits_toggled += 1 if habit["toggled"]
-      display_key = habit["toggled"] ? '✓'.colorize(:light_cyan) : key
+      display_key = habit["toggled"] ? '✓'.colorize(:light_magenta) : key
       habitline = "#{habit["name"].ljust(habitline_length, ".")}#{display_key}"
 
       if habit_counter <= (habits.size / 2)

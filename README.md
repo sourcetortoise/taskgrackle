@@ -1,21 +1,23 @@
-# TaskGrackle - An annoying grackle tells you what to do
+# TaskGrackle - Day Manager
 
 ![TaskGrackle in operation](https://github.com/mirthturtle/taskgrackle/blob/main/img/taskgrackle-daytime.jpg "TaskGrackle in operation")
 
-Get your life on track with TaskGrackle, a self-hosted and hackable life management system. Run it on macOS, Windows, or a dedicated [Raspberry Pi](https://www.raspberrypi.com/) terminal in your living/working space.
+Keep your life on track with TaskGrackle, a self-hosted and hackable task management system. Run it on macOS, Windows, or a dedicated [Raspberry Pi](https://www.raspberrypi.com/) terminal in your living/working space.
 
 ## Features
 
-- Task reminders – see what's most important today
-- Easy check-in – log self-care, cleaning, work, pet care and more with simple keystrokes
-- Mood checkup – get tailored self-care tips for your day
-- Exercise break – a curated list of exercises you can do at home
-- Friends & Family – reminders to check in with people and communities closest to you
-- Grocery list - don't forget any essentials before going to the store
-- Moon status – get moon info late at night
-- Vice management – limit counterproductive habits with Gracklecoin rewards
-- Grackle vocalizations – ignore TaskGrackle for too long and it'll start grackling at you (extremely optional)
-- Customizable – edit the data files and code to make it your own. Change the `frequency_hours` of each task in `data/tasks.rb` to prioritize what's important.
+- **Task reminders** – see what's most important today
+- **Easy check-in** – log self-care, cleaning, work, pet care & more with simple keystrokes
+- **Mood checkup** – get tailored self-care tips for your day
+- **Morning/evening routines** – highlight tasks that get your day started and relax before bed
+- **Exercise break** – a curated list of exercises you can do at home
+- **Friends & Family** – reminders to check in with people and communities
+- **Work Hour** – a checklist to prepare for a focused work session
+- **Grocery list** – don't forget any essentials before going to the store
+- **Moon status** – get moon info late at night
+- **Customizable** – edit the data files and code to make it your own. Change the `frequency_hours` of each task in `data/tasks.rb` to prioritize what's important.
+- **Vice management** – limit counterproductive habits with Gracklecoin rewards
+- **Grackle vocalizations** – ignore TaskGrackle for too long and it'll start grackling at you (extremely optional)
 
 ![Checking in tasks](https://github.com/mirthturtle/taskgrackle/blob/main/img/taskgrackle-checkin.jpg "Checking in tasks")
 
@@ -99,4 +101,4 @@ Adjust volume with `alsamixer`.
 
 ### License & credits
 
-This program is licensed by GPL-3.0. Grackle ornament by [MaryEllaCreations](https://www.etsy.com/shop/MaryEllaCreations).
+This program is licensed by GPL-3.0. Consult with a health professional before doing any exercises suggested by the software. Grackle ornament by [MaryEllaCreations](https://www.etsy.com/shop/MaryEllaCreations).
