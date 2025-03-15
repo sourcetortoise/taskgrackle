@@ -93,6 +93,7 @@ defaults.pcm.card #
 ```
 Adjust volume with `alsamixer`.
 
+![TaskGrackle reversed](https://github.com/mirthturtle/taskgrackle/blob/main/img/taskgrackle-reverse.jpg "TaskGrackle reversed")
 
 ### Bangle.js Smartwatch integration – coming soon
 
