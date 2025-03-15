@@ -392,7 +392,7 @@ class Output
 
   def self.splash
     clear
-    puts "wolfOS".colorize(:magenta) + " & " + "Mirth Turtle Media".colorize(EXERCISE_COLOR) + " present:"
+    puts "Source Tortoise Software".colorize(:magenta) + " & " + "Mirth Turtle Media".colorize(EXERCISE_COLOR) + " present:"
     puts " _            _      ".colorize(TASK_COLOR) + "                  _    _      ".colorize(GRACKLE_COLOR) + "\n"
     puts "| |_ __ _ ___| | __".colorize(TASK_COLOR) + "__ _ _ __ __ _  ___| | _| | ___ ".colorize(GRACKLE_COLOR) + "\n"
     puts "| __/ _` / __| |/ /".colorize(TASK_COLOR) + " _` | '__/ _` |/ __| |/ / |/ _ \\".colorize(GRACKLE_COLOR) + "\n"
