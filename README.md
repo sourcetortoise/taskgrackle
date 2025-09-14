@@ -102,4 +102,4 @@ Adjust volume with `alsamixer`.
 
 ### License & credits
 
-This program is licensed by GPL-3.0. Consult with a health professional before doing any exercises suggested by the software. Grackle ornament by [MaryEllaCreations](https://www.etsy.com/shop/MaryEllaCreations).
+This program is licensed by GPL-3.0. Consult with a health professional before doing any exercises suggested by the software. Moon data from ![moon-api](https://github.com/LindseyB/moon-api). Grackle ornament by [MaryEllaCreations](https://www.etsy.com/shop/MaryEllaCreations).

@@ -1108,22 +1108,21 @@ class Output
     def self.moon_info
       puts "\nQuerying moon service...".colorize(DARKMOON_COLOR)
       begin
-        timestamp = Time.new.to_i
-
-        response = HTTParty.get("https://api.farmsense.net/v1/moonphases/?d=#{timestamp}", verify: false)
-        resp = JSON.parse( response.body )[0]
+        response = HTTParty.get("https://moon-api.co/")
+        resp = JSON.parse(response.body)
 
         # parse out data
-        if resp['Error'] == 0
-          moon_name = resp['Moon'][0]
-          phase = resp['Phase']
-          puts "The #{moon_name || 'moon'} is #{phase} tonight.".colorize(BRIGHTMOON_COLOR)
+        if resp['phase'] && resp['association'] && resp['days']
+          phase = resp['phase'].split("_").map { |w| w.capitalize }.join(" ")
+          days = resp['days']
+          association = resp['association']
+          puts "The moon is #{phase} tonight. [#{days} days]".colorize(BRIGHTMOON_COLOR)
+          puts "Associated with: #{association}.".colorize(BRIGHTMOON_COLOR)
         else
           puts "Error getting moon info... hopefully it's OK.".colorize(BRIGHTMOON_COLOR)
         end
       rescue => e
-        puts "Unexpected error on moon call.".colorize(BRIGHTMOON_COLOR)
-        puts e
+        puts "Unexpected error on moon call: #{e}".colorize(BRIGHTMOON_COLOR)
       end
     end
 
